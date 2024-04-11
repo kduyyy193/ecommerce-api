@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ecommerce_c4plus</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.5.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Repository\" />
+    <None Remove="IRepository\" />
+    <None Remove="Models\" />
+    <None Remove="Helpers\" />
+    <None Remove="Databases\" />
+    <None Remove="IServices\" />
+    <None Remove="Models\Entities\" />
+    <None Remove="Models\DTOs\" />
+    <None Remove="Models\DTOs\Request\" />
+    <None Remove="Models\DTOs\Response\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Repository\" />
+    <Folder Include="IRepository\" />
+    <Folder Include="Models\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Databases\" />
+    <Folder Include="IServices\" />
+    <Folder Include="Models\Entities\" />
+    <Folder Include="Models\DTOs\" />
+    <Folder Include="Models\DTOs\Request\" />
+    <Folder Include="Models\DTOs\Response\" />
+  </ItemGroup>
+</Project>
